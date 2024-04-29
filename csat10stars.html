@@ -44,8 +44,8 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
       function () {
         window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
     });
-
 </script>
+<script src="https://kit.fontawesome.com/914b751213.js" crossorigin="anonymous"></script>
 
     <title>CSAT Calculator</title>
     <link rel="stylesheet" href="style3.css">
@@ -180,5 +180,23 @@ var eventProperties = {
             });
         }
     </script>
+    <div>
+        <button class="homebutton" id="go_back_home"><a href="https://ggfirenze.github.io/calculateyourcsat/homepage.html"><i class="fa-solid fa-house"></i></a></button>
+ <script type="text/javascript">
+
+ var backHome = document.getElementById('go_back_home');
+
+   // Add a click event listener to the link
+  backHome.addEventListener('click', function(event) {
+    // Track the link click event with Amplitude and pass additional properties
+    amplitude.getInstance().logEvent('back_home_clicked', {debug: true})
+var eventProperties = {
+    source: "csat_10_stars"
+}
+
+          amplitude.track('back_home_clicked', eventProperties);
+    });
+    </script>
+    </div>
 </body>
 </html>
