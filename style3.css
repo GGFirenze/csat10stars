@@ -110,7 +110,18 @@ button:hover {
     margin-top: 10px;
 }
 
+.homebutton {
+    position: relative;
+    right: 250px;
+    top: 350px;
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+}
 
+.fa-solid {
+    color: white;
+}
 
 
 
