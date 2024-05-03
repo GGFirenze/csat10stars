@@ -123,5 +123,47 @@ button:hover {
     color: white;
 }
 
+@media only screen and (max-width: 700px) {
+           
+    h2 {
+        font-size: 1 rem;
+    }
+    .calculator {
+                
+        width: 90%;
+        margin: 0 auto;
+    }
+    input[type="number"] {
+        width: 50px;
+    }
+
+    .homebutton {
+    position: absolute;
+    right: 50px;
+    top: 770px;
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    z-index: 1;
+    }
+
+    #clear {
+    width: 20%;
+    right: 280px;
+    top: 570px;
+    margin-top: 27px;
+    padding: 8px;
+    background-color: #FF6F61;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    }
+}
+
+
 
 
